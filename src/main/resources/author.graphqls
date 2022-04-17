@@ -8,3 +8,8 @@ type Query {
     authors: [Author]
     countAuthors: Int!
 }
+
+# Root
+type Mutation {
+    createAuthor(name: String!): Author!
+}

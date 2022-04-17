@@ -3,6 +3,7 @@ package com.egrubc.todo.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
