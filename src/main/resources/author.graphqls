@@ -1,0 +1,10 @@
+type Author {
+    id: ID!
+    name: String!
+}
+
+# Root
+type Query {
+    authors: [Author]
+    countAuthors: Int!
+}

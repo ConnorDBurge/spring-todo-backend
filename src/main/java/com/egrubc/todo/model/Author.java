@@ -6,22 +6,22 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class User {
+public class Author {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "name", nullable = false)
     private String name;
 
-    public User() {
+    public Author() {
     }
 
-    public User(Long id) {
+    public Author(Long id) {
         this.id = id;
     }
 
-    public User(String name) {
+    public Author(String name) {
         this.name = name;
     }
 }
